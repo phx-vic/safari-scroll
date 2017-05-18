@@ -1,0 +1,67 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+#menu:not(.slideout-menu) {
+    display: none;
+}
+
+.slideout-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 256px;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: 0;
+    display: none;
+    background-color: #455A64;
+    color: #FFF;
+}
+
+.slideout-menu-left {
+    left: 0;
+}
+
+.slideout-menu-right {
+    right: 0;
+}
+
+.slideout-panel {
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+    background-color: #FFF; /* A background-color is required */
+    min-height: 100vh;
+    padding: 1.5em 1.5em 3em;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+    display: block;
+}
+
+.slideout-menu ul {
+    list-style: none;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 1.5em;
+}
+
+.slideout-menu ul li:not(:last-child) {
+    margin-bottom: 1.5em;
+}
+
+.menu svg {
+    fill: #455A64;
+}
