@@ -6,5 +6,5 @@ Prevent scrolling on iOS Safari
 * [Slideout](https://slideout.js.org/)
 
 ### Methods
-* [method 1](method-1.html)
-* [method 2](method-1.html)
+* [method 1](src/app-1.js)
+* [method 2](src/app-2.js)
