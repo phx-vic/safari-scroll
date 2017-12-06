@@ -17,8 +17,6 @@ $('.menu').on('click', function (event) {
 $('#menu').on('touchstart', function (event) {
     sidebar.allowUp = this.scrollTop > 0;
     sidebar.allowDown = this.scrollTop < (this.scrollHeight - this.offsetHeight);
-    sidebar.prevTop = null;
-    sidebar.prevBot = null;
     sidebar.lastY = event.originalEvent.touches[0].pageY;
 });
 
